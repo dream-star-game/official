@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'MiSans';
+    src: url('../assets/MiSansVF.ttf');
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    margin: 0;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+}
+
+.header-wrap {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-wrap {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-image: url('../assets/logoBG.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 100px;
+    padding: 0 32px;
+    width: auto;
+}
+
+.nav-item a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: 'MiSans', system-ui, sans-serif;
+    transition: color 0.2s ease;
+}
+
+.nav-item a:hover {
+    color: #2E8DFF;
+}
+
+.section-wrap {
+    display: flex;
+    gap: 20px;
+    max-width: 1500px;
+    margin: 120px auto 0;
+    padding: 0 20px;
+    align-items: stretch;
+}
+
+.poster {
+    flex: 0 0 50%;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.poster::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(0deg, #000000 0.75%, rgba(54, 54, 54, 0) 50%);
+    border-radius: 12px;
+}
+
+.poster>* {
+    position: relative;
+    z-index: 2;
+}
+
+.button-left {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url('../assets/left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.button-left:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.button-right {
+    position: absolute;
+    right: 12px;
+    left: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url('../assets/right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+}
+
+.button-right:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.poster-title {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+    color: #ffffff;
+    font-family: 'MiSans', system-ui, sans-serif;
+}
+
+.poster-currect {
+    position: absolute;
+    left: 20px;
+    bottom: 8px;
+    width: 40px;
+    height: 8px;
+    background: #2E8DFF;
+    border-radius: 30px;
+}
+
+footer {
+    width: 100%;
+    max-width: 1520px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot-left {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.foot-top-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footlogo {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.footlogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.footer-text {
+    font-size: 22px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.footer-copyright {
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.contact-group {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.contact {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.24s ease;
+}
+
+.contact:hover {
+    transform: scale(1.02);
+}
+
+.contact:hover img {
+    opacity: 0.85;
+}
+
+.contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width:1200px) {
+    .section-wrap {
+        flex-direction: column;
+        padding: 0 20px;
+        margin-top: 120px;
+    }
+
+    .poster {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .header-wrap {
+        left: 16px;
+        transform: none;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .nav {
+        gap: 10px;
+        height: 52px;
+        padding: 0 12px;
+    }
+
+    .nav-item a {
+        font-size: 0.9rem;
+    }
+}

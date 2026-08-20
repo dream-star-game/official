@@ -1,0 +1,32 @@
+.timeline{
+    position: absolute;
+    width: 92vw;
+    height: 33vh;
+    left: 5vw;
+    top: 66vh;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20rem;
+}
+.timeline-title{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    left: 0;
+    top: 0;
+    background-image: url('../assets/timeline-title.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.time-div{
+    position: absolute;
+    width: 11vw;
+    height: 19vh;
+    left: 11vw;
+    top: 2vh;
+    background: rgba(46, 141, 255, 0.8);
+    border-radius: 20rem;
+    z-index: 10;
+}

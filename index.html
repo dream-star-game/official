@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>梦星Game</title>
+    <meta name="Keywords" content="梦星Game,梦星game,游戏社区,游戏兑换码,游戏攻略" />
+    <meta name="description" content="梦星Game是一个开放共创的游戏社区，提供游戏攻略、兑换码、资讯等功能。" />
+    <meta name="author" content="quiet_star_gazing, 1086@cdstar.top" />
+    <link rel="icon" href="./assets/logo.svg" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
+    <!-- <link rel="stylesheet" href="./css/timeline.css"> -->
+</head>
+
+<body class="bg">
+    <div class="header-wrap">
+        <a href="./index.html">
+            <div class="logo"></div>
+        </a>
+        <div class="nav">
+            <div class="nav-item">
+                <a href="#">游戏攻略</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">赛事预告</a>
+            </div>
+            <div class="nav-item">
+                <a href="./key.html">兑换码合集</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">版本更新</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">感谢名单</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">关于本站</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrap">
+        <div class="poster">
+            <img src="../assets/poster/nte13.png" alt="版本海报" draggable="false" />
+            <div class="button-left"></div>
+            <div class="button-right"></div>
+            <h1 class="poster-title">[异环]1.3版本前瞻</h1>
+        </div>
+        <div class="cards">
+            <div class="card-item">
+                <img src="../assets/index/help.png" alt="游戏攻略" draggable="false" />
+            </div>
+            <div class="card-item">
+                <img src="../assets//index/pl.png" alt="赛事预告" draggable="false" />
+            </div>
+            <div class="card-item">
+                <a href="./key.html">
+                    <img src="../assets/index/key.png" alt="兑换码合集" draggable="false" />
+                </a>
+            </div>
+            <div class="card-item">
+                <img src="../assets/index/update.png" alt="版本更新" draggable="false" />
+            </div>
+            <div class="card-item">
+                <img src="../assets/index/thanks.png" alt="感谢名单" draggable="false" />
+            </div>
+            <div class="card-item">
+                <img src="../assets/index/about.png" alt="关于本站" draggable="false" />
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-left">
+            <div class="foot-top-row">
+                <div class="footlogo">
+                    <img src="../assets/logo.svg" alt="梦星Game" draggable="false" />
+                </div>
+                <h6 class="footer-text">攻略、福利、资讯，游戏服务一站搞定</h6>
+            </div>
+            <p class="footer-copyright">
+                © 2022-2026 梦星Game·本站使用 CC BY-NC-SA 4.0 知识共享许可协议
+            </p>
+        </div>
+        <div class="contact-group">
+            <a href="https://qm.qq.com/q/pKf7JZa4Du" target="_blank">
+                <div class="contact">
+                    <img src="../assets/qq.png" alt="QQ" draggable="false" />
+                </div>
+            </a>
+            <a href="https://space.bilibili.com/3546610831198351" target="_blank">
+                <div class="contact">
+                    <img src="../assets/bilibili.png" alt="Bilibili" draggable="false" />
+                </div>
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        Swal.fire({
+            text: "本站由一群游戏爱好者创建，提供游戏攻略、兑换码、资讯等功能，欢迎加入QQ群与我们共创社区~",
+            icon: "info",
+        });
+        document.addEventListener("contextmenu", (e) => e.preventDefault());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+// document.body.style.setProperty('--posterNum', 5)
