@@ -31,18 +31,31 @@
     opacity: 0.85;
 }
 
+/* 1200px 小显示器、平板横屏：宽度100%，保持3列 */
 @media (max-width:1200px) {
     .cards {
         width: 100%;
     }
 }
 
+/* 992px 平板竖屏、折叠屏：改为2列 */
+@media (max-width:992px) {
+    .cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        row-gap: 8px;
+        column-gap: 16px;
+        align-items: stretch;
+    }
+}
+
+/* 768px 手机端：2列，间隙缩小 */
 @media (max-width:768px) {
     .cards {
         width: 100%;
-        height: auto;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto;
         row-gap: 8px;
         column-gap: 14px;
         align-items: start;

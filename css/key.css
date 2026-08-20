@@ -225,7 +225,7 @@
 
 .game-title {
     justify-self: end;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
@@ -264,77 +264,119 @@
     background: #2270dd;
 }
 
-@media (max-width:1200px) {
-    .key-wrap {
-        max-width: 100%;
-    }
-}
 
-@media (max-width:768px) {
+@media (max-width: 1200px) {
     .game-filter-wrap {
-        margin: 80px 0 8px;
+        margin: 120px 0 8px;
     }
 
     .custom-select {
-        width: calc(100% - 32px);
+        width: calc(100% - 24px);
     }
 
     .key-wrap {
-        width: 100%;
-        max-width: 1680px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        row-gap: 32px;
-        column-gap: 32px;
-        align-items: stretch;
-        justify-items: stretch;
-        box-sizing: border-box;
-        margin: 4px auto 60px;
-        padding: 0 48px;
+        row-gap: 20px;
+        margin: 4px auto 32px;
+        padding: 0 16px;
     }
 
     .key-item {
-        padding: 20px;
-        row-gap: 18px;
+        padding: 16px;
+        row-gap: 14px;
     }
 
     .code-text {
-        font-size: 30px;
-        letter-spacing: 1px;
+        font-size: 22px;
+        letter-spacing: 0.5px;
     }
 
     .game-title {
-        font-size: 32px;
+        font-size: 24px;
+    }
+
+    .server-tag {
+        font-size: 12px;
     }
 
     .reward-area {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .expire-text {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .copy-btn {
-        font-size: 20px;
-        padding: 10px 24px;
+        font-size: 16px;
+        padding: 7px 16px;
     }
 
     .right-bottom {
-        gap: 10px;
+        gap: 8px;
+        justify-content: flex-end;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width: 992px) {
+    .game-filter-wrap {
+        margin: 120px 0 8px;
+    }
+
+    .custom-select {
+        width: calc(100% - 24px);
+    }
+
     .key-wrap {
-        max-width: 100%;
+        row-gap: 18px;
+        margin: 4px auto 28px;
+        padding: 0 16px;
+    }
+
+    .key-item {
+        padding: 16px;
+        row-gap: 14px;
+    }
+
+    .code-text {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        white-space: normal;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+
+    .game-title {
+        font-size: 22px;
+    }
+
+    .server-tag {
+        font-size: 12px;
+    }
+
+    .reward-area {
+        font-size: 17px;
+    }
+
+    .expire-text {
+        font-size: 15px;
+    }
+
+    .copy-btn {
+        font-size: 16px;
+        padding: 7px 16px;
+    }
+
+    .right-bottom {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 }
+
 
 @media (max-width:768px) {
     .game-filter-wrap {
-        margin: 80px 0 8px;
+        margin: 120px 0 8px;
     }
 
     .custom-select {
