@@ -290,4 +290,28 @@ footer {
     .nav-item a {
         font-size: 0.9rem;
     }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-group {
+        margin-bottom: 1rem;
+    }
+
+    .foot-top-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-text {
+        font-size: 1.1rem;
+    }
+
+    .contact img {
+        width: 100px;
+        height: 100px;
+    }
 }
