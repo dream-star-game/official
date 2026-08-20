@@ -40,8 +40,11 @@
     letter-spacing: 2px;
     overflow-wrap: normal;
     white-space: nowrap;
-    overflow: hidden;
+    word-break: normal;
+    /*关闭字母强制切断*/
+    overflow-wrap: anywhere;
 }
+
 
 .game-title {
     justify-self: end;
