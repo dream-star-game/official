@@ -71,6 +71,8 @@ img {
     font-size: 1.25rem;
     font-family: 'MiSans', system-ui, sans-serif;
     transition: color 0.2s ease;
+    white-space: nowrap;
+    text-decoration: none;
 }
 
 .nav-item a:hover {
