@@ -1,0 +1,169 @@
+.thanks-wrap {
+    margin: 80px auto 40px;
+    max-width: 1400px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.thanks-title {
+    font-family: 'MiSans', system-ui, sans-serif;
+    font-size: 32px;
+    margin: 0px 0 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.thanks-card-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 20px;
+}
+
+.thanks-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-sizing: border-box;
+    /* hover轻微上浮，和你card-item交互保持一致 */
+    transition: transform 0.24s ease;
+}
+
+.thanks-card:hover {
+    transform: translateY(-4px);
+}
+
+.thanks-avatar {
+    flex: 0 0 72px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.thanks-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.thanks-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.thanks-name {
+    font-family: 'MiSans', system-ui, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.thanks-desc {
+    font-family: 'MiSans', system-ui, sans-serif;
+    font-size: 16px;
+    color: #666666;
+    /*简介文字太长自动换行，不会溢出卡片*/
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+/* ========= 自适应断点，和key.css完全对齐 ========= */
+/* 1200px 小显示器平板横屏：3列不变，缩小边距字号 */
+@media (max-width:1200px) {
+    .thanks-wrap {
+        margin: 56px auto 32px;
+        padding: 50px 16px;
+    }
+
+    .thanks-title {
+        font-size: 28px;
+    }
+
+    .thanks-card-wrap {
+        row-gap: 20px;
+        column-gap: 16px;
+    }
+
+    .thanks-card {
+        padding: 18px;
+        gap: 16px;
+    }
+
+    .thanks-avatar {
+        flex: 0 0 64px;
+        width: 64px;
+        height: 64px;
+    }
+
+    .thanks-name {
+        font-size: 20px;
+    }
+
+    .thanks-desc {
+        font-size: 15px;
+    }
+}
+
+/* 992px平板竖屏：改为2列布局 */
+@media (max-width:992px) {
+    .thanks-card-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .thanks-wrap {
+        margin: 48px auto 28px;
+    }
+
+    .thanks-title {
+        font-size: 26px;
+    }
+
+    .thanks-avatar {
+        flex: 0 0 60px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* 768px手机端：单列布局 */
+@media (max-width:768px) {
+    .thanks-wrap {
+        margin: 40px auto 24px;
+        padding: 30px 12px;
+    }
+
+    .thanks-title {
+        font-size: 22px;
+    }
+
+    .thanks-card-wrap {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    .thanks-card {
+        padding: 16px;
+        gap: 14px;
+    }
+
+    .thanks-avatar {
+        flex: 0 0 56px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .thanks-name {
+        font-size: 18px;
+    }
+
+    .thanks-desc {
+        font-size: 14px;
+    }
+}
